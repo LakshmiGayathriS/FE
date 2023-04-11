@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="LoginStyle.css">
+
+
+</head>
+
+<body>
+    <section>
+        <!-- <video autoplay muted loop plays-inline>
+            <source src="background.mp4" type="video/mp4">
+        </video> -->
+        <!-- <video autoplay muted loop id="myVideo">
+            <source src="background.mp4" type="video/mp4">
+        </video> -->
+        <div class="form-box">
+            <div class="form-value">
+                <form action="web.html">
+                    <h2>LOGIN</h2>
+                    <div class="ipbox">
+                        <input type="email" required id="email">
+                        <label for="">Email</label>
+                        <span>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="ipbox">
+                        <input type="password" required id="password">
+                        <label for="">Password</label>
+                        <span>
+                            <i class="fa fa-eye" aria-hidden="true" onclick="toggle()"></i>
+                        </span>
+                    </div>
+                    <button onclick="authorize()">Log In</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var state = false;
+            function toggle() {
+
+                if (state) {
+                    document.getElementById("password").setAttribute("type", "password");
+                    state = false;
+                }
+                else {
+                    document.getElementById("password").setAttribute("type", "text");
+                    state = true;
+                }
+            }
+            function authorize() {
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if (email == "bigThinkCode@btc.com" && password == "okenter987") {
+                    window.location.href = "web.html?email=" + email;
+                    alert("Login Successful");
+                }
+                else {
+                    alert("Invalid login credentials");
+                    return;
+                }
+            }
+        </script>
+
+    </section>
+
+
+</body>
+
+</html>

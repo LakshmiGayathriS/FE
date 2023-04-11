@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RESUME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- <div class="simp">
+    <div id="email"></div>
+    <div id="time"></div>
+   </div> -->
+
+    <div class="overall">
+
+        <div class="introduction">
+            <div class="name">
+                <h3 class="n"> LAKSHMI GAYATHRI S</h3>
+            </div>
+            <div class="overview">
+                <h4 class="left_head"> OVERVIEW</h4>
+                <p class="para">
+                    A dedicated, self motivated, organised person also capable of time management seeking for a position
+                    where I can launch my career, learn new skills, expand my knowledge and leverage my learnings. </p>
+            </div>
+            <div class="contact">
+                <h4 class="left_head">CONTACT</h4>
+                <ul>
+                    <li><i class="fa fa-phone-square" aria-hidden="true"></i> +91 9790890165</li>
+                    <li><i class="fa fa-envelope-square" aria-hidden="true"></i> gayathri25122001@gmail.com</li>
+                    <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a
+                            href="https://www.linkedin.com/in/lakshmi-gayathri-s-33864721b/"> LinkedIn</a></li>
+                    <li><i class="fa fa-github-square" aria-hidden="true"></i> <a
+                            href="https://github.com/gayathri-2501"> Github</a></li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h4 class="left_head">SKILLS</h4>
+                <ul>
+                    <li> C/C++</li>
+                    <li> Python</li>
+                    <li> Java</li>
+                    <li> Front End (HTML, CSS, JS)</li>
+                    <li> Back End (PHP, SQL)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="information">
+            <div id="email"></div>
+            <div id="time"></div>
+            <div class="education">
+                <h3 class="right_head"> EDUCATION</h3>
+                <ul>
+                    <li>
+                        <h4> SRI VENKATESWARA COLLEGE OF ENGINEERING</h5>
+                            <h5> B.E., CSE (2019 - 2023)</h5>
+                    </li>
+                    <li>
+                        <h4> D. A.V MATRIC H. S. SCHOOL</h5>
+                            <h5> XII (2019)</h5>
+                    </li>
+                    <li>
+                        <h4> K. P. C. V. S. S. SCHOOL</h5>
+                            <h5> X (2017)</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects">
+                <h3 class="right_head"> PROJECTS</h3>
+                <div class="proj_obj">
+                    <h4> LET'S GROW MORE</h4>
+                    <h5> <i>Data Science Internship</i></h5>
+                    <ul>
+                        <li> Conversion of image to pencil sketch using cv2 package</li>
+                        <li> Exploratory Data Analysis on terrorist dataset using pandas and matplotlib packages</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="proj_obj">
+                    <h4> TCS ION</h4>
+                    <h5> <i>Data Science ad Machine Learning Internship</i></h5>
+                    <ul>
+                        <li> Automate detection of sentiments from different textual comments and feedback</li>
+                        <li> Modules : TextBlob, RE, Wordcloud</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="proj_obj">
+                    <h4> CUSTOMER CHURN ANALYSIS</h4>
+                    <ul>
+                        <li> Built a full stack model to analyze telecom customer churn analysis using decision tree
+                            algorithm</li>
+                        <li> EDA modules : pandas, numpy, matplotlib, seaborn</li>
+                        <li> Churn model : pandas, numpy, sklearn, imblearn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="certification">
+                <h3 class="right_head"> CERTIFICATIONS</h3>
+                <ul>
+                    <li> Cloud Computing (NPTEL)</li>
+                    <li> Web Development (Internshala)</li>
+                    <li> Programming in Java (NPTEL)</li>
+                    <li> Data analysis using Python and R (NIIT)</li>
+                    <li> Advanced Excel and Power BI (NIIT)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var d = new Date();
+    document.getElementById('time').innerHTML = d;
+    var urlParams = new URLSearchParams(window.location.search);
+    var email = urlParams.get("email");
+    document.getElementById("email").innerHTML = email
+</script>
+
+</html>
